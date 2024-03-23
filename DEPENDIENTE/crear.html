@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de creación de usuario bancario</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+         form {
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px; /* Ajuste el tamaño del padding */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-size: 14px; /* Ajuste el tamaño de la fuente */
+        }
+
+        input[type="submit"] {
+            background-color: #a68a72;
+            color: white;
+            padding: 12px 20px; /* Ajuste el tamaño del padding */
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px; /* Ajuste el tamaño de la fuente */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a68a72;
+        }
+       
+
+        #franja {
+            background-color: #a68a72;
+            height: 60px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="franja"><h1>Banco de Agricultura Salvadoreño SA de CV</h1>
+            <div id="container"></div>
+            
+            <h1>Creacion de usuario nuevo</h1>
+            
+    <form action="solicitud.php" method="post">
+
+        <label for="nombre">Nombre Completo</label>    
+        <input type="text" id="nombre" name="nombre" size="50" required /><br><br>
+
+        <label for="dui">Documento de identificacion </label>
+        <input type="number" id="dui" name="dui" size="40"/><br><br>
+
+        <label for="celular">Numero de Celular</label> 
+        <input type="number" id="celular" name="celular" max="80000000" /><br><br>
+
+        <label for="correo">Dirección de correo electronico</label>
+        <input type="email" id="correo" name="correo" size="50" /><br><br>
+        
+
+        <label for="cuenta">Tipo de cuenta</label>
+        <input type="cuenta" multiple name="cuenta" id="cuenta" list="cuentas" required size="20" /><br><br>
+        <datalist id="cuentas">
+            <option value="Cuenta de ahorro">Ahorro</option>
+            <option value="Cuenta de credito">Credito</option>
+            <option value="Cuenta de prestamo">Prestamo</option>
+            <option value="Cuenta de deposito a plazo fijo">Plazo</option>
+        </datalist>
+
+        
+        <label for="pass">Genere una contraseña</label>
+        <input type="password" id="pass" name="pass" required/><br><br>
+
+        <input type="submit" value="Crear usuario">
+    </center>
+
+    </form>
+</body>
+</html>

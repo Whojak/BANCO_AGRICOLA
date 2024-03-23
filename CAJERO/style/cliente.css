@@ -1,0 +1,108 @@
+/*Encabezado*/
+.color-navbar {
+  background-color: #f2e3b6;
+}
+
+.textheader {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0d0d0d;
+}
+
+/*Presentacion del usuario*/
+.welcome-card {
+  background: rgb(13, 13, 13);
+  background: linear-gradient(
+    150deg,
+    rgba(13, 13, 13, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  color: #f2e3b6;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: scale(1.02);
+}
+
+/*Cartas para cuentas*/
+.cards-accounts {
+  height: 125px;
+  transition: transform 0.3s ease;
+}
+
+.cards-accounts:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.price {
+  background: rgb(13, 13, 13);
+  background: linear-gradient(
+    150deg,
+    rgba(13, 13, 13, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: #f2e3b6;
+}
+
+.principal-card {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button-class {
+  background-color: #a68a72;
+  border-radius: 10px;
+  border-color: #0d0d0d;
+  transition: transform 0.3s ease;
+}
+
+.button-class:hover {
+  background-color: #f2e3b6;
+  border-radius: 10px;
+  border-color: #0d0d0d;
+  transform: scale(1.02);
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*Tabla de movimientos*/
+.transference-title {
+  text-align: center;
+}
+
+.transference-table {
+  text-align: center;
+}
+
+.container-table {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.col{
+  text-align: center;
+}
+
+.button-transferer{
+  margin-top: 10px;
+}
+
+/*Footer*/
+.footer{
+  background-color: #f2e3b6;
+  padding: 20px;
+  text-align: center;
+}
+
+h6{
+  padding-top: 15px;
+}

@@ -1,0 +1,61 @@
+ARCHIVO PRINCIPAL: index.php = Login del banco
+IMPORTANTE REVISAR LA RUTA DONDE SE MANDA A LLAMAR EL ROL DE GERENTE EN EL LOGIN
+
+Pantallas funcionales: 
+
+Login
+
+http://localhost:8080/BANCO_AGRICOLA/index.php
+
+Gerente socursal: 
+
+http://localhost:8080/BANCO_AGRICOLA/GERENTE_SOCURSAL/index.php
+
+Gerente de banco:
+
+http://localhost:8080/BANCO_AGRICOLA/GERENTE_BANCO/gerente_banco.php
+
+
+--- ESPECIFICACIONES DE LA APLICACION ---
+
+
+FRONTEND:
+Gerente de socursal - FALTA: centrar tablas
+Gerente de banco - FALTA: imagenes y centrar tablas
+
+VISTAS A COMPLETAR:
+Dependiente - FALTA: Rehacer
+Cliente - FALTA: Adaptar a las vistas de gerentes
+Cajero - FALTA: Adaptar a la vista de gerentes
+
+BACKEND FALTA:
+-Gerente socursal:Filtrar por variable de sesion cada tabla y tambien ingresar usuarios por variable de 
+sesion para una mejor logica 
+
+-Gerente de banco: Filtrar por variable de sesion cada tabla y tambien ingresar usuarios por variable de 
+sesion para una mejor logica, validacion de vistas por tipo de usuario
+
+-Login: validacion de vistas por tipo de usuario, filtrar por cliente y cajero, ahorita solo filtra por
+gerente de socursal y banco, desarrollar apartado de registro con validacion
+
+-Cliente: a desarrollar
+
+-Cajero: a desarrollar
+
+-Dependiente:a desarollar
+
+BASE DE DATOS:
+
+
+Los datos que se han puesto son de prueba.
+
+probar con usuario: admin2 pass:g11
+probar con usuario: admin3 pass:g12
+
+Para verificar que solo filtra por gerente de banco y socursal en el login 
+
+
+
+
+
+

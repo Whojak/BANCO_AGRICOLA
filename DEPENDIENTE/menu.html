@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Estilos CSS para el contenedor */
+        #contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Para ocupar toda la altura de la ventana */
+        }
+
+        /* Estilos CSS para el menú */
+        #menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .titulo-caja {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos CSS para el botón de validar */
+        #boton-validar {
+            padding: 10px 20px;
+            
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #franja {
+            background-color: #a68a72;
+            height: 60px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #a68a72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+
+      
+    </style>
+</head>
+<body>
+    <center>
+        <div id="franja"><h3>Banco de Agricultura Salvadoreño SA de CV</h3> 
+        </center>
+    <div id="contenedor">
+        <div id="menu">
+            <div class="titulo-caja">DUI</div>
+            <div class="titulo-caja">Transferencia</div>
+        <button type="button" id="boton-validar" class="btn btn-outline-secondary" onclick="window.location.href = 'VLD.html';">Validar</button>
+    </div>
+    <footer>
+        Banco de Agricultura Salvadoreño SA de CV
+    </footer>
+</body>
+</html>

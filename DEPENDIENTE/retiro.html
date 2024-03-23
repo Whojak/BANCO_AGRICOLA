@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso y retiro de efectivo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #franja {
+            background-color: #a68a72;
+            height: 60px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #a68a72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="franja"><h1>Banco de Agricultura Salvadoreño SA de CV</h1> 
+        
+<h1>Ingreso y retiro de efectivo</h1>
+<form action="transaccion.php" method="post">
+    <label for="dui">Número de DUI:</label>
+    <input type="number" id="dui" name="dui"  required><br><br>
+        
+    <label for="monto">Monto a abonar/retirar:</label>
+    <input type="number" id="monto" name="monto" min="5" max="1000" required><br><br>
+    <input type="submit" name="abonar" value="Abonar">
+    <input type="submit" name="retirar" value="Retirar">
+</center>
+<button id="boton-volver" class="btn btn-outline-dark" onclick="window.location.href = 'VLD.html';">Volver</button>
+<footer>
+    Banco de Agricultura Salvadoreño SA de CV
+</footer>
+</form>
+</body>
+</html>

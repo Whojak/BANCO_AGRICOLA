@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .boton-menu {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        #franja {
+            background-color: #a68a72;
+            height: 60px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #a68a72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+      
+        #contenedor-botones {
+            position: relative;
+        }
+
+     
+        #boton-volver {
+            float: left; 
+        }
+
+       
+        #boton-validar-usuario {
+            float: right; 
+        }
+
+        #boton-transacciones {
+            position: fixed;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        #boton-transferencia {
+            position: fixed;
+            left: 50%;
+            bottom: 50%;
+            height: 20;
+            transform: translate(-50%, 50%);
+        }
+
+        #boton-retiro {
+            position: fixed;
+            left: 40%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        
+
+      
+    </style>
+</head>
+<body>
+    
+<center>
+<div id="franja"><h1>Banco de Agricultura Salvadoreño SA de CV</h1> 
+</center>
+        
+
+
+    <div id="contenedor-botones">
+        <button id="boton-volver" class="btn btn-outline-dark" onclick="window.location.href = 'menu.html';">Volver</button>
+        <button id="boton-validar-usuario" class="btn btn-outline-dark" onclick="window.location.href = 'validacion.html';">Validar Usuario</button>
+        <button id="boton-validar-usuario" class="btn btn-outline-dark" onclick="window.location.href = 'crear.html';">Creear Usuario</button>    
+        <button id="boton-transacciones" class="btn btn-outline-dark" onclick="window.location.href = 'retiro.html';">Hacer Transacciones</button>
+    </div>
+    </div>
+    
+    <footer>
+        Banco de Agricultura Salvadoreño SA de CV
+    </footer>
+    
+</body>
+</html>
